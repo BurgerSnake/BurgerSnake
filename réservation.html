@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>site  internet</title>
+		<script src="js/site.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/site.css">
+	</head>
+	<body>
+		<header>
+			<table>
+				<tr>
+					<td><a href="index.html"><button onclick="index.html" class="bouton">Accueil</button></a></td>
+					<td><a href="attractions.html"><button onclick="attractions.html" class="bouton">Attractions</button></a></td>
+					<td><a href="calendrier.html"><button onclick="calendrier.html" class="bouton">Calendrier</button></a></td>
+					<td><a href="réservation.html"><button onclick="réservation.html" class="bouton">Résevation</button></a></td>
+				</tr>
+			</table>
+		</header>
+		<section>
+				<img class="image" src="image/mainImage.jpg">
+		</section>
+		<section>
+			<form action=# onSubmit="return ajoutReservation(this,arrayReservation);">
+			Commande :
+				<input type="text" value="nom" id="Nom">
+				<br>
+				nombre de ticket enfant (5 Euros):
+				<input type="number" id="enfant">
+				<br>
+				nombre de ticket adulte (20 Euros):
+				<input type="number" id="adulte">
+				<br>
+				nombre de ticket etudiant (15 Euros):
+				<input type="number" id="etudiant">
+				<br>
+				nombre de ticket senior (15 Euros):
+				<input type="number" id="senior">
+				<br>
+				<input type="reset">
+				<input type="submit">
+				<br>
+			</form>
+		</section>
+		<section class="offre1">
+			<span class="titre">Premium ticket</span> <br>
+			<span class="pasTitre">Ticket valide une journée</span> <br>
+			<span class="titre">tarif : 30€<br></span>
+			
+		</section>
+		<section class="offre2">
+			<span class="titre">Premium Pass </span><br>
+			<span class="pasTitre">offre valable jusqu'au 1/12/2021 </span><br>
+			<span class="titre">tarif : 159€</span><br>
+			
+		</section>
+		<section id="commande" class="commande">
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>
